@@ -121,13 +121,25 @@ public class AddressBook {
 			
 			/**
 			 * This is the main method that
-			 * creates object of user in class addressbook and
+			 * creates object of users in class addressbook and
 			 * calls contactDisplay method to main 
+			 * and display new contact in address book
 			 */
 			public static void main(String[] args)
 			{
 
 				 AddressBook user1 = new  AddressBook();
+				 System.out.println("details of user 1 : ");
 				 user1.contactDisplay();
+				 
+				 AddressBook user2 = new  AddressBook();
+				 System.out.println("\ndetails of user 2 is");
+				 user2.contactDisplay();
+				
+
+				 AddressBook user3 = new  AddressBook();
+				 System.out.println("\ndetails of user 3 is");
+				 user3.contactDisplay();
+				 
 			}
 }
