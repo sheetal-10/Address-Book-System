@@ -10,26 +10,27 @@ import java.util.ArrayList;
  */
 public class AddressBook {
 	static Scanner sc = new Scanner(System.in);
-    static ArrayList<Contact> contactList = new ArrayList<>();
-   
-    public static void main(String[] args) 
-    {
-
-        System.out.println("Welcome to the Address book program"); // Welcome statement
-        AddressBook addressBook = new AddressBook();
-        addressBook.addContactList();
-    }
+	 static ArrayList<Contact> contactList = new ArrayList<>();
+	   
+	    public static void main(String[] args) 
+	    {
+	    	// Welcome message
+	        System.out.println("Welcome to the Address book program"); 
+	        AddressBook addressBook = new AddressBook();
+	        addressBook.addingContactList();
+	    }
     
     /** 
      * To display the names of persons that are added 
      */
-    public void display(ArrayList<Contact> contactList)//Display Address book
-   {
-        for (Contact contact : contactList) 
-        {
-            System.out.println(contact);
-        }
-    }
+	    public void display(ArrayList<Contact> contactList)
+		   {
+		        for (Contact contact : contactList) 
+		        {
+		            System.out.println(contact);
+		        }
+		    }
+		    
     
     /** 
      * Asks the user for details of the person and storing in person List 
@@ -150,14 +151,29 @@ public class AddressBook {
             }
         }
     }
+    
+    /** 
+     * Asks the user to delete existing details using the name of the person 
+     */
+    
+    public void deletingContact(ArrayList<Contact> contactList) 
+    {
+        System.out.println("Enter the first name of the contact you wish to delete");
+        String delete = sc.next();
+        contactList.removeIf(contact -> contact.firstName.equals(delete));   
+    }
 
  	
-      public void addContactList() {
+    /**
+     * Method to choose an option
+     */
+    public void addingContactList() {
         while (true) {
             System.out.println("Press 0 - Display all contacts");
             System.out.println("Press 1 - Add contact");
             System.out.println("Press 2 - Edit contact");
-            System.out.println("Press 6 - Exit");
+            System.out.println("Press 3 - Delete contact");
+            System.out.println("Press 4 - Exit");
             int option = sc.nextInt();
             sc.nextLine();
 
@@ -165,8 +181,9 @@ public class AddressBook {
                 case 0 -> display(contactList);
                 case 1 -> addContact(null, contactList);
                 case 2 -> editContact();
+                case 3 -> deletingContact(contactList);
             }
-            if (option == 6) {
+            if (option == 4) {
                 break;
             }
         }
