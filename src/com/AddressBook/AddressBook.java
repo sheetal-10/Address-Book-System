@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 /**
- * Program for creating contact in address book
+ * Program for deleting contact in address book
  * @author Sheetal
  * @since 2021-08-12
  */
