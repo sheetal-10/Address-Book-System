@@ -165,7 +165,7 @@ public class AddressBook {
 
  	
     /**
-     * Method to choose an option
+     * Method to choose an option to perform
      */
     public void addingContactList() {
         while (true) {
