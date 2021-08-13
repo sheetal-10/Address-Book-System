@@ -49,7 +49,7 @@ public class AddressBook {
         contactItems.address = sc.next();
        
 
-        System.out.println("Enter city : ");
+        System.out.println("Enter city name: ");
         contactItems.city = sc.next();
 
         System.out.println("Enter state : ");
