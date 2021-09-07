@@ -4,7 +4,7 @@ package com.AddressBook;
  * This class Contains getters and setters of details of a person
  * Gets the data from User and Setting it to variables
  * @author Sheetal
- * @since 2021-09-04
+ * @since 2021-09-06
  */
 public class ContactItems {
 	// Variables

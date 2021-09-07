@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 /**
  * This code takes input from console as name, address, phone number, email .
  * @author Sheetal
- * @since 2021-09-04
+ * @since 2021-09-06
  */
 public class ContactFunctions {
 	private static Scanner scan = new Scanner(System.in);
