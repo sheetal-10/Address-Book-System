@@ -1,9 +1,0 @@
-  ab1: Contacts
-  {fName='sheetal', 
-  lName='panda', 
-  address='sn', 
-  city='bbsr', 
-  state='odi', 
-  zip=1213, 
-  phone=2435435, 
-  email='err43t@yahoo.com'}
